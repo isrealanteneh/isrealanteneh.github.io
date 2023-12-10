@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+#gameboard,
+.info {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  overflow: hidden;
+}
+.info {
+  position: relative;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px 10px 0 0;
+}
+
+.setting {
+  position: absolute;
+  height: 30px;
+  width: 300px;
+  background-color: rgb(99, 66, 66);
+  visibility: hidden;
+  z-index: 10;
+}
+.setting.active {
+  visibility: visible;
+}
+.setting ul {
+  position: relative;
+  top: -10px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.setting ul li {
+  margin-right: 1rem;
+}
+/* css for about */
+
+.aboutOpen {
+  position: absolute;
+  width: 250px;
+  height: 250;
+  padding: 1rem;
+  margin-left: 7px;
+  text-align: center;
+  border: solid 2px black;
+  border-radius: 5px;
+  background: linear-gradient(
+    rgb(224, 220, 220),
+    rgb(207, 204, 204),
+    rgba(139, 132, 132, 0.7)
+  );
+  animation: popout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  visibility: hidden;
+}
+
+@keyframes popout {
+  0% {
+    top: 11%;
+    transform: scale(0.1);
+    /* transform: scaleY(0.1); */
+  }
+  100% {
+    top: 40%;
+    transform: scale(1);
+    /* transform: scaleY(0.9); */
+  }
+}
+
+/* css for background */
+.backgrounds {
+  position: inherit;
+  top: 30px;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  border-top: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background colors css start */
+
+.colors {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 300px;
+  background-color: rgb(99, 66, 66);
+  visibility: hidden;
+  z-index: 10000;
+}
+.colors.active {
+  visibility: visible;
+}
+
+.colors .color {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  border-radius: 50%;
+  margin: 5px;
+  opacity: 1;
+}
+.colors .color:hover {
+  opacity: 0.5;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: solid 2px black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pinks {
+  background-color: aqua;
+}
+
+.pink {
+  background-color: pink;
+}
+.SlateBlue {
+  background-color: SlateBlue;
+}
+.Violet {
+  background-color: Violet;
+}
+.MediumSeaGreen {
+  background-color: green;
+}
+.Tomato {
+  background-color: Tomato;
+}
+.Orange {
+  background-color: Orange;
+}
+/* background colors css end */
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 15px solid blue;
+  box-sizing: border-box;
+}
+
+.cross {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
