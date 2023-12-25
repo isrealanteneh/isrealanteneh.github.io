@@ -162,13 +162,11 @@
         <p>
           A website that offers tests and quizzes and tutorials aims to enable users to learn and assess their knowledge in various subjects or areas of interest. It offers a variety of questions and tests on a variety of topics, allowing students to test their understanding and receive feedback on their performance. The website is designed to be user-friendly, engaging and informative, providing valuable resources to individuals seeking to enhance their knowledge and skills.
         </p>
-        <!-- <a href="./portfolio-projects/newMIm/index.html" target="_blank"> -->
-          <a href="./portfolio-projects/React-App/isral/public/index.html" target="_blank">
+        <a href="./portfolio-projects/newMIm/index.html" target="_blank">
 
         <button type="button" class="btn">view</button></a>
 
         <a href="https://github.com/isrealanteneh/education-purpose" target="_blank">
-        <!-- <a href="https://github.com/isrealanteneh/education-purpose" target="_blank"> -->
         <button type="button" class="btn"><i class="fa-brands fa-github"></i></button></a>
       </div>
     </div>
@@ -251,22 +249,21 @@
       <h3 class="center">Contact</h3>
       <h4 class="s-text">my contact</h4>
       <div class="contact-box">
-        <form action="">
+        <form onsubmit="sendEmail(); reset(); return false;">
           <p>
-            <input type="text" placeholder="your name" />
+            <input type="text" id="name" name="name" placeholder="your name" />
           </p>
           <p>
-            <input type="email" placeholder="your Email" />
+            <input type="email" id="email"  name="email" placeholder="your Email" />
           </p>
           <textarea
             name="message"
-            id=""
-            cols="30"
-            rows="10"
+            id="message"
+            rows="4"
             placeholder="your message..."
           ></textarea>
           <p>
-            <button class="btn">Send</button>
+            <button  type="submit" class="btn">Send</button>
           </p>
         </form>
       </div>
@@ -307,6 +304,7 @@
       <p class="center">Israel Anteneh &copy; | all right reserved</p>
     </div>
     <!-- fotter section end -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

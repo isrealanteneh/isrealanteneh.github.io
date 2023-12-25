@@ -55,3 +55,21 @@ function revealAnimi() {
     }
   }
 }
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.@gmail.com",
+    Username: "israleanteneh@gmail.com",
+    Password: "48610A444F09C4FEB92A85A0B4643A8A5986",
+    To: "israleanteneh@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "This is the subject",
+    Body:
+      "Name " +
+      document.getElementById("name").value +
+      "<br> Email : " +
+      document.getElementById("name").value +
+      "<br> Message : " +
+      document.getElementById("message").value,
+  }).then((message) => alert("Message sent succesfully"));
+}
