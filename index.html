@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <title>My PortFolio</title>
+  </head>
+
+  <body>
+    <!-- nav section start -->
+    <section class="main-nav">
+      <div class="title">
+        <h2>PortFolio</h2>
+
+        <button id="opennav" onclick="opennav()">
+          <i class="fa-solid fa-bars"><a href="#home"></a></i>
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li id="coverPhoto"></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skill">skil</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#projects">project</a></li>
+          <li><a href="#contact">contact</a></li>
+
+        </ul>
+      </nav>
+    </section>
+    <!-- nav section end -->
+    <!-- home section start -->
+    <section id="home" class="home cont">
+      <div class="text">
+        <h3 id="greet">Hello I'm</h3>
+        <h3 id="me">Israel Anteneh</h3>
+        <p>
+          Creatively Driven and Skilled Full-Stack Web Developer Crafting Exceptional Websites with a Flair for Design and User Experience.        </p>
+        <span>
+          <button class="btn">
+            <a href="/myFile/my-resume (5).pdf" target="_blank">
+              My Resume</a
+            >
+          </button>
+          <button type="button" class="btn">
+            <a href="/myFile/my-resume (5).pdf" download="my-resume">
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </button>
+        </span>
+      </div>
+      <div class="img"></div>
+    </section>
+    <!-- home section end -->
+    <!-- about section start -->
+    <section id="about" class="about cont">
+      <h3 class="center">About</h3>
+      <h4 class="s-text">About me</h4>
+      <div class="img"></div>
+      <div class="text">
+        <p>
+          Experienced  Full-Stack web developer with a passion for creating innovative and user-friendly websites. Skilled in HTML, CSS, JavaScript, and responsive design. Proficient in various frameworks and CMS platforms. Committed to delivering high-quality work and staying up-to-date with the latest industry trends. Strong problem-solving skills and ability to work efficiently in fast-paced environments. Dedicated to providing exceptional user experiences and exceeding client expectations.
+        </p>
+        <button class="btn">More</button>
+
+      </div>
+
+    </section>
+    <!-- about section end -->
+    <a href="#home" class="indictor"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- skill section start -->
+    <section id="skill" class="skill cont">
+      <h3 class="center">Skill</h3>
+      <h4 class="s-text">my skill</h4>
+      <div class="bars">
+        <!-- skils here!! -->
+        <div class="box">
+          <div class="line"><span>html</span></div>
+          <div class="percent html"><span>99%</span></div>
+        </div>
+        <!-- ************ -->
+        <div class="box">
+          <div class="line"><span>CSS</span></div>
+          <div class="percent css"><span>95%</span></div>
+        </div>
+        <!-- ************ -->
+
+        <div class="box">
+          <div class="line"><span>JAVA SCRIPT</span></div>
+          <div class="percent js"><span>70%</span></div>
+        </div>
+        <!-- ************ -->
+
+        <div class="box">
+          <div class="line"><span>PHP</span></div>
+          <div class="percent php"><span>80%</span></div>
+        </div>
+        <!-- ************ -->
+
+        <div class="box">
+          <div class="line"><span>MYSQL</span></div>
+          <div class="percent mysql"><span>73%</span></div>
+        </div>
+        <!-- ************ -->
+
+        <div class="box">
+          <div class="line"><span>NODE JS</span></div>
+          <div class="percent nodejs "><span>60%</span></div>
+        </div>
+        <!-- ************ -->
+
+        <div class="box">
+          <div class="line"><span>REACT</span></div>
+          <div class="percent react"><span>63%</span></div>
+        </div>
+        <!-- ************ -->
+        <div class="box">
+          <div class="line"><span>bootstrap</span></div>
+          <div class="percent bootstrap"><span>93%</span></div>
+        </div>
+        <!-- ************ -->
+        <div class="box">
+          <div class="line"><span>jquery</span></div>
+          <div class="percent jquery"><span>83%</span></div>
+        </div>
+        <!-- ************ -->
+        <div class="box">
+          <div class="line"><span>git</span></div>
+          <div class="percent git"><span>70%</span></div>
+        </div>
+        <!-- ************ -->
+      </div>
+    </section>
+    <!-- skill section end -->
+
+<!-- project section starts -->
+
+<section id="projects" class="project cont">
+  <h3 class="center">Portfolio</h3>
+  <h4 class="s-text">my Portfolio</h4>
+    <!-- project section -->
+
+    <div class="oneslide">
+      <div class="para">
+        <p>
+          The best T-Tac-Toe game with many great features. It should also have a visually appealing design and smooth animations. Other features include customizable game boards and player avatars, a leaderboard to track high scores, and the ability to save and resume games. Overall, the goal is to create a highly immersive and engaging t-tac-toe game that gives players a unique and fun experience.
+        </p>
+        <a href="./portfolio-projects/tic-toc-game/index.html"  target="_blank">
+        <button type="button" class="btn"><i class="fa-brands fa-github"></i></button></a>
+        
+      </div>
+      <div class="image">
+        <img src="/imgs/Photo Grid 1_1.png" alt="" />
+      </div>
+    </div>
+    <!-- ****************************** -->
+    <div class="oneslide">
+      <div class="image">
+        <img src="./imgs/e-learning.jpg" alt="" />
+      </div>
+      <div class="para">
+        <p>
+          A website that offers tests and quizzes and tutorials aims to enable users to learn and assess their knowledge in various subjects or areas of interest. It offers a variety of questions and tests on a variety of topics, allowing students to test their understanding and receive feedback on their performance. The website is designed to be user-friendly, engaging and informative, providing valuable resources to individuals seeking to enhance their knowledge and skills.
+        </p>
+        <a href="./portfolio-projects/newMIm/index.html" target="_blank">
+        <button type="button" class="btn">view</button></a>
+        <a href="https://github.com/isrealanteneh/education-purpose" target="_blank">
+        <button type="button" class="btn"><i class="fa-brands fa-github"></i></button></a>
+      </div>
+    </div>
+    <!-- ****************************** -->
+    <div class="oneslide">
+      <div class="para">
+        <p>
+          The best T-Tac-Toe game with many great features. It should also have a visually appealing design and smooth animations. Other features include customizable game boards and player avatars, a leaderboard to track high scores, and the ability to save and resume games. Overall, the goal is to create a highly immersive and engaging t-tac-toe game that gives players a unique and fun experience.
+        </p>
+        <a href="./portfolio-projects/tic-toc-game/index.html"  target="_blank">
+        <button type="button" class="btn">view</button></a>
+        <a href="https://github.com/isrealanteneh/tic-tac-toe-game" target="_blank">
+        <button type="button" class="btn"><i class="fa-brands fa-github"></i></button></a>
+      </div>
+      <div class="image">
+        <img src="/imgs/ti-tac-toe.jpg" alt="" />
+      </div>
+    </div>
+    <!-- ****************************** -->
+
+    <div class="oneslide">
+      <div class="image">
+        <img src="/imgs/pizza-delivery.jpg" alt="" />
+      </div>
+      <div class="para">
+        <p>
+          A well-designed pizza delivery front-end website includes a visually appealing and easy-to-navigate interface. Clear and organized menus featuring pizza options are added, along with customization options for toppings and sizes. In addition, the Site may display ongoing promotions, customer reviews, and provide contact details for customer support. Ultimately, the goal is to provide a smooth and seamless user experience for ordering pizzas online.
+        </p>
+        <a href="./portfolio-projects/newPizzaDeliveryFolder/index.html" target="_blank">
+          <button type="button"class="btn">view</button></a>
+
+          <a href="https://github.com/isrealanteneh/new-pizza-delivery" target="_blank">
+        <button type="button" class="btn"><i class="fa-brands fa-github"></i></button></a>
+      </div>
+    </div>
+    <!-- ****************************** -->
+</section>
+
+<!-- project section ends -->
+
+    
+    <!-- service section start -->
+    <section id="service" class="service cont">
+      <h3 class="center">Service</h3>
+      <h4 class="s-text">my service</h4>
+      <div class="box b1">
+        <!-- background image in css -->
+        <div class="text">
+          <h3 class="center">Web Design</h3>
+          <p>
+            I create the website design and layout with technical knowledge keeping in mind the customer requirements. I have a good understanding of UI (User Interface) and UX (User Experience) and use design programs to create visual components.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="box b2">
+        <!-- background image in css -->
+        <div class="text">
+          <h3 class="center">Responsive Design</h3>
+          <p>
+            I can design websites that adapt to the user's device. Regardless of the device a website is viewed on, I build a website with good usability and appearance. I can build a user-friendly website by adapting responsive web design to different screen sizes, orientations, layouts and platforms.
+              </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="box b3">
+        <!-- background image in css -->
+        <div class="text">
+          <h3 class="center">UI/UX DESIGN</h3>
+          <p>
+            I design user interfaces through UI design to create a user-friendly website. By making designs that create a good first impression for the user
+            I build a user friendly website. User-centered UX focuses on UI design. </p>
+        </div>
+      </div>
+      <!--  -->
+    </section>
+    <!-- service section end -->
+    <!-- contact section start -->
+    <section id="contact" class="contact cont">
+      <h3 class="center">Contact</h3>
+      <h4 class="s-text">my contact</h4>
+      <div class="contact-box">
+        <form action="">
+          <p>
+            <input type="text" placeholder="your name" />
+          </p>
+          <p>
+            <input type="email" placeholder="your Email" />
+          </p>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="your message..."
+          ></textarea>
+          <p>
+            <button class="btn">Send</button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+    <!-- fotter section start -->
+    <div class="fotter">
+      <div class="myinfo">
+        <p>
+          <span
+            >
+            <a href="tel:+251941416856"><abbr title="+251941416856" ><i class="fa-solid fa-phone"  target="_blank"></i></abbr></a>
+            </span
+          >
+        </p>
+      
+        <p>
+          <span>
+            <a href = "mailto: https://israleanteneh@gmail.com"  target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+              </span>
+        </p>
+        <p>
+          <span
+            >
+            <a href="https://t.me/israelIA23"  target="_blank"><abbr title="https://t.me/israelIA23" ><i class="fa-brands fa-telegram"></i></abbr></a></span
+          >
+        </p>
+        <p>
+          <span></span>
+            <a href="https://github.com/isrealanteneh"
+              target="_blank"><abbr title="https://github.com/isrealanteneh" ><i class="fa-brands fa-github"></i
+            ></abbr></a>
+          </span>
+        </p>
+      </div>
+      <p class="center">Israel Anteneh &copy; | all right reserved</p>
+    </div>
+    <!-- fotter section end -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
