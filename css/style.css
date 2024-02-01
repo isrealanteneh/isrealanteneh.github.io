@@ -249,7 +249,10 @@ nav ul li {
   animation: react 3s;
   animation-fill-mode: forwards;
 }
-
+.Python.active {
+  animation: Python 3s;
+  animation-fill-mode: forwards;
+}
 .bootstrap.active {
   animation: bootstrap 3s;
   animation-fill-mode: forwards;
@@ -292,7 +295,7 @@ nav ul li {
   }
 
   to {
-    width: 70%;
+    width: 95%;
   }
 }
 
@@ -302,7 +305,7 @@ nav ul li {
   }
 
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -312,7 +315,7 @@ nav ul li {
   }
 
   to {
-    width: 73%;
+    width: 93%;
   }
 }
 
@@ -322,7 +325,7 @@ nav ul li {
   }
 
   to {
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -332,7 +335,16 @@ nav ul li {
   }
 
   to {
-    width: 63%;
+    width: 95%;
+  }
+}
+@keyframes Python {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 95%;
   }
 }
 
@@ -342,7 +354,7 @@ nav ul li {
   }
 
   to {
-    width: 93%;
+    width: 97%;
   }
 }
 
@@ -352,7 +364,7 @@ nav ul li {
   }
 
   to {
-    width: 83%;
+    width: 95%;
   }
 }
 
@@ -362,7 +374,7 @@ nav ul li {
   }
 
   to {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -388,6 +400,7 @@ nav ul li {
 
 .project img {
   width: 100%;
+  height: 350px;
 }
 .oneslide {
   position: relative;
