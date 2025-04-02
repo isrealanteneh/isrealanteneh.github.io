@@ -55,3 +55,34 @@ function revealAnimi() {
     }
   }
 }
+
+// Initialize EmailJS
+emailjs.init("3szhn4nRZXnLnAcE1"); // Replace with your EmailJS User ID
+
+// Handle form submission
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Collect form data
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Send email using EmailJS
+  emailjs
+    .send("service_68phvx2", "template_y4ontra", {
+      name: name,
+      email: email,
+      message: message,
+    })
+    .then(
+      function (response) {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset(); // Clear the form
+      },
+      function (error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      }
+    );
+});

@@ -249,10 +249,7 @@ nav ul li {
   animation: react 3s;
   animation-fill-mode: forwards;
 }
-.Python.active {
-  animation: Python 3s;
-  animation-fill-mode: forwards;
-}
+
 .bootstrap.active {
   animation: bootstrap 3s;
   animation-fill-mode: forwards;
@@ -435,6 +432,11 @@ nav ul li {
   grid-template-rows: 30%;
   opacity: 0;
 }
+.oneslide .para p{
+  font-size: .7em;
+
+}
+
 .oneslide .para.active {
   animation-name: slide;
   animation-duration: 2s;
@@ -486,7 +488,6 @@ nav ul li {
 
 .service .box .text {
   position: relative;
-  margin: 0 5% 5% 5%;
   background-color: rgba(96, 113, 120, 0.8);
   border-radius: 10px;
   padding: 1%;
