@@ -57,8 +57,23 @@ function revealAnimi() {
 }
 
 // Initialize EmailJS
-emailjs.init("3szhn4nRZXnLnAcE1"); // Replace with your EmailJS User ID
-
+emailjs.init({
+  publicKey: '3szhn4nRZXnLnAcE1',
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // Block the suspended emails
+    list: ['foo@emailjs.com', 'bar@emailjs.com'],
+    // The variable contains the email address
+    watchVariable: 'userEmail',
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: 'app',
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});
 // Handle form submission
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -70,7 +85,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   // Send email using EmailJS
   emailjs
-    .send("service_68phvx2", "template_y4ontra", {
+    .send("service_opl3ask", "template_y4ontra", {
       name: name,
       email: email,
       message: message,

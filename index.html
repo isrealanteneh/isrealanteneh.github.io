@@ -208,7 +208,7 @@
       <div class="box b1">
         <!-- background image in css -->
         <div class="text">
-          <h3 class="center">Responsive Design</h3>
+          <h3 class="center">Full-Stack Web Developer</h3>
           <p>
             Skilled Full-Stack Web Developer with expertise in designing and building dynamic, responsive websites using modern technologies like Vue.js, Node.js, TypeScript, JavaScript, Express, and MongoDB. Proficient in creating seamless user experiences with interactive front-end designs and robust back-end APIs. Experienced in developing scalable, secure, and efficient web applications with a focus on clean architecture and maintainable code.
               </p>
@@ -310,8 +310,23 @@
     <!-- fotter section end -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  emailjs.init("3szhn4nRZXnLnAcE1"); // Replace with your EmailJS User ID
-</script>
+emailjs.init({
+  publicKey: '3szhn4nRZXnLnAcE1',
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // Block the suspended emails
+    list: ['foo@emailjs.com', 'bar@emailjs.com'],
+    // The variable contains the email address
+    watchVariable: 'userEmail',
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: 'app',
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});</script>
 <script src="js/main.js"></script>
 
   </body>
